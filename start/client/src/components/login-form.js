@@ -19,7 +19,8 @@ export default class LoginForm extends Component {
 
   onSubmit = event => {
     event.preventDefault();
-    this.props.login({ variables: { email: this.state.email } });
+    const test = this.props.login({ variables: { email: this.state.email } });
+    console.log('test', test);
   };
 
   render() {
